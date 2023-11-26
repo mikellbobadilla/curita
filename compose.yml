@@ -1,0 +1,16 @@
+version: '3.1'
+
+services:
+  db:
+    image: mariadb
+    container_name: 'curita_db'
+    restart: 'no'
+    environment:
+      MARIADB_ROOT_PASSWORD: 'helloRoot'
+      MARIADB_DATABASE: 'curita_db'
+      MARIADB_USER: 'curita'
+      MARIADB_PASSWORD: 'helloCurita'
+    ports:
+      - '3306:3306'
+    volumes:
+      - './mariadb:/var/lib/mysql'

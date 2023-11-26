@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Marhey:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+:root {
+  --bg-primary: #18181b;
+  --teal-color-400: #4db5c3;
+  --teal-color-300: #86d1da;
+  --teal-color-500: #3299a8;
+  --teal-color-700: #2d6e7e;
+  --teal-color-900: #264853;
+  --teal-color-950: #152e37;
+
+  --gray-color-800: #525252;
+
+  --danger-color: #e11d48;
+  --warning-color: #eab308;
+  --success-color: #65a30d;
+  --info-color: #0284c7;
+
+  --font-color-primary: #aaaeb6;
+  --font-color-secondary: #d1d7e0;
+  --marhey-font: 'Marhey', sans-serif;
+  --open-sans-font: 'Open sans', sans-serif;
+}
+
+html, body {
+  font-size: 16px;
+  font-family: var(--open-sans-font);
+  font-weight: 400;
+  background: var(--bg-primary);
+  color: var(--font-color-secondary);
+}
+
+.message {
+  max-width: 700px;
+  display: grid;
+  grid-template-columns: auto 30px;
+  align-items: center;
+  margin: 10px 0;
+  margin-bottom: 20px;
+  padding: 0 5px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.message button {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  padding: 0;
+  outline: none;
+  border: none;
+  color: var(--font-color-secondary);
+  transition: color ease .4s;
+}
+
+.message.hidden {
+  display: none;
+}
+
+.message button:hover {
+  color: var(--font-color-primary);
+}
+
+.message p {
+  margin: 10px;
+}
+
+.message-danger {
+  background-color: #3e030d;
+  border-color: var(--danger-color);
+  color: #f3747d;
+}
+
+.message-info {
+    background-color: #002036;
+    border-color: var(--info-color);
+    color: var(--info-color);
+}
+
+.message-warning {
+  background-color: #291d00;
+  border-color: var(--warning-color);
+  color: #cb9b06;
+}
+
+.message-success {
+  background-color: #0c1900;
+  border-color: var(--success-color);
+  color: var(--success-color);
+}
+
+.warning-text {
+  color: var(--warning-color);
+  font-weight: 700;
+}
+
+.info-text {
+  color: var(--info-color);
+  font-weight: 700;
+}
+
+.success-text {
+  color: var(--success-color);
+  font-weight: 700;
+}

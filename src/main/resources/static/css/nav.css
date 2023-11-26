@@ -1,0 +1,66 @@
+.nav {
+  border-bottom: 2px solid var(--teal-color-500);
+}
+
+.primary-bg {
+  background-color: var(--bg-primary);
+}
+
+.border-gray {
+  border-color: var(--gray-color-800);
+}
+
+.icon__text {
+  padding-top: var(--bs-navbar-brand-padding-y);
+  padding-bottom: var(--bs-navbar-brand-padding-y);
+  margin-right: var(--bs-navbar-brand-margin-end);
+  font-size: var(--bs-navbar-brand-font-size);
+  font-weight: 700;
+  color: var(--teal-color-500);
+  text-decoration: none;
+  white-space: nowrap
+}
+
+.icon__text:hover {
+  color: var(--teal-color-300);
+}
+
+.icon__text:focus {
+  color: var(--teal-color-500);
+}
+
+.icon__button {
+  padding-top: var(--bs-navbar-brand-padding-y);
+  padding-bottom: var(--bs-navbar-brand-padding-y);
+  font-size: var(--bs-navbar-brand-font-size);
+  border: 1px solid var(--teal-color-950);
+  color: var(--teal-color-500);
+  text-decoration: none;
+  white-space: nowrap
+}
+
+.item a {
+  color: var(--font-color-secondary);
+  transition: color ease .4s;
+}
+
+.icon__button:hover {
+  color: var(--teal-color-300);
+}
+
+.icon__button:focus {
+  color: var(--teal-color-500);
+}
+
+.item a:hover {
+  color: var(--teal-color-300);
+}
+
+.item a:focus {
+  color: var(--teal-color-500);
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+  background-color: var(--teal-color-950);
+}

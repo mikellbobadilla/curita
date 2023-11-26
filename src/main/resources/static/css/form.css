@@ -1,0 +1,74 @@
+.input__label {
+  padding-left: 2px;
+  color: var(--font-color-secondary);
+}
+
+.input__field {
+  display: block;
+  width: 100%;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 2px solid var(--gray-color-800);
+  outline: transparent;
+  background-color: transparent;
+  color: var(--font-color-primary);
+  transition: border ease .4s;
+  caret-color: var(--teal-color-400);
+}
+
+.input__field::placeholder {
+  color: var(--gray-color-800);
+}
+
+.input__field:focus {
+  background-color: transparent;
+}
+
+.input__field:focus {
+  border-color: var(--teal-color-700);
+}
+
+/* Button Styles */
+
+.button {
+  display: inline-block;
+  padding: .5rem .70rem;
+  background-color: var(--teal-color-400);
+  color: var(--teal-color-950);
+  outline: transparent;
+  border: 2px solid var(--teal-color-400);
+  border-radius: 10px;
+  transition: ease .4s;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--teal-color-300);
+  border-color: var(--teal-color-300);
+}
+
+.button:active {
+  background-color: var(--teal-color-500);
+  border-color: var(--teal-color-500);
+}
+
+/* Button Outline Styles */
+.button-outline {
+  display: inline-block;
+  padding: .5rem .70rem;
+  background-color: transparent;
+  color: var(--teal-color-300);
+  outline: transparent;
+  border: 2px solid var(--teal-color-300);
+  border-radius: 10px;
+  transition: ease .4s;
+}
+
+.button-outline:hover {
+  background-color: var(--teal-color-950);
+}
+
+.button-outline:active {
+  background-color: var(--teal-color-900);
+}

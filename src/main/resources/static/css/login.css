@@ -1,0 +1,32 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  margin: 0;
+  padding: 0 32px;
+}
+
+form {
+  max-width: 392px;
+
+}
+
+h1 {
+  font-family: var(--marhey-font);
+  font-weight: 700;
+  margin: 5px 0;
+}
+
+h2 {
+  font-size: 24px;
+  margin: 5px 0;
+  color: var(--teal-color-400);
+}
+
+.credits {
+  color: var(--gray-color-800);
+}

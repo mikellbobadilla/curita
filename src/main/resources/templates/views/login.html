@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/schemes.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <title>Login</title>
+</head>
+<body>
+
+<form th:object="${loginForm}" th:action="@{/login}" class="form row" method="post">
+
+    <div th:if="${param.error}" id="message" class="message message-danger" xmlns:th="http://www.thymeleaf.org">
+        <p>Credenciales inválidas</p>
+        <button id="btn-close">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path fill="currentColor"
+                      d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6L6.4 19Z" />
+            </svg>
+        </button>
+    </div>
+
+    <h1 class="text-center">CURITA</h1>
+
+    <h2 class="my-3">Login</h2>
+
+    <div class="col-md-12 my-2">
+        <label for="username" class="py-1 input__label">Usuario:</label>
+        <input th:field="*{username}" id="username" autocomplete="off" type="text" class="input__field" placeholder="username">
+    </div>
+
+    <div class="col-md-12 my-2">
+        <label for="password" class="py-1 input__label">Contraseña:</label>
+        <input th:field="*{password}" id="password" name="password" type="password" class="input__field" placeholder="*********">
+    </div>
+
+    <div class="d-grid gap-2 mt-4">
+        <button type="submit" class="button">Iniciar sesión</button>
+    </div>
+    <p class="mt-5 text-center credits">
+        &copy; CURITA
+    </p>
+</form>
+
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/message-closer.js"></script>
+</body>
+</html>
